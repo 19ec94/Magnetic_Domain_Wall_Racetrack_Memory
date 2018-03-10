@@ -1,0 +1,54 @@
+\begin{frame}[t]
+	\frametitle{Individual Energies}
+	\only<1>{
+	\begin{figure}[ht]
+		\centering
+		\includegraphics[width = .9\textwidth]{../figs/randInit}
+		\caption{Randomly initialized magnetization vectors with fixed BC}
+		\label{fig:randominit}
+	\end{figure}
+	}
+	\only<2>{
+	\begin{figure}[ht]
+		\centering
+		\begin{subfigure}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../figs/anisotropy1}
+			\caption{Anisotropic Energy}
+		\end{subfigure}
+		\begin{subfigure}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../figs/exchange1}
+			\caption{Exchange Energy}
+		\end{subfigure}
+		\vspace{1cm}
+		\begin{align*}
+		    E_a[\m]=\frac{K_u}{M_s^2}\int_\Omega \left(m_1^2+m_2^2\right) \dd{\x}
+		    \qquad
+		    E_e[\m]=\frac{C_{ex}}{M_s^2}\int_\Omega \qty| \nabla \m |^2 \dd{\x}
+		\end{align*}
+	\end{figure}
+	}
+	\only<3>{
+	\begin{figure}[ht]
+		\begin{subfigure}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../figs/stray}
+			\caption{Stray Energy}
+		\end{subfigure}
+		\begin{subfigure}{0.49\textwidth}
+			\centering
+			\includegraphics[width=\textwidth]{../figs/zeeman}
+			\caption{Zeeman Energy}
+		\end{subfigure}
+		\label{fig:testcases}
+		\vspace{1cm}
+		\begin{align*}
+		    E_s[\m]= \frac {\mu_0}2 \int_\Omega \m \cdot \nabla U \dd{\x}
+		    \qquad
+    		E_Z[\m]= -\mu_0 \int_\Omega \mathbf{H}_e \cdot \m \dd{\x}
+		\end{align*}
+		
+	\end{figure}
+	} 
+\end{frame}
